@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="form.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Document</title>
+</head>
+
+<body style="background-color: hsl(348, 83%, 47%);">
+	<div id = "head" class = "flex-container1">
+				<div style = "margin-top: 8px;">
+					<img src = "grib_red.jpg" alt="" width = "40px" height = "40px">
+				</div>
+				<div>
+					<h1 style = "color: hsla(0, 100%, 100%, 1.0);">
+						MARIO
+					</h1>
+				</div>
+				<div style = "margin-left: 50px; margin-top: 8px;">
+					<button class = " btn btn-outline-warning" onclick = "location.href = 'forum.html';">
+						Forum
+					</button>
+				</div>
+				<div style = "margin-top: 8px;">
+					<button class = "btn btn-outline-warning" onclick = "location.href = 'market_page.html';">
+						Market
+					</button>
+				</div>
+				<div style = "margin-top: 8px;">
+					<button class = "btn btn-outline-warning" onclick = "location.href = 'products.html';">
+						Product
+					</button>
+				</div>
+				<div style = "margin-top: 8px;">
+					<button class = "btn btn-outline-warning" onclick = "location.href = 'About.html';">
+						About
+					</button>
+				</div>
+				<div style = "margin-top: 8px;">
+					<button class = "btn btn-warning" onclick = "location.href = 'sign_in.html';">
+						Sign Up/Sign In
+					</button>
+				</div>
+				<div style = "margin-top: 5px;">
+					<img src = "grib_blue.jpg" alt="" width = "45px" height = "45px">
+				</div>
+		</div>
+
+		
+	<h2 class="h">CREATE YOUR OWN TEAM OR JOIN A TEAM</h2>
+	<h4 class="h">Fill out the FORM</h4>
+	<form action="#" method="get" class="form">
+		<div>
+			<p>Enter your FullName</p>
+			<input id="firstname" class="feedback-input" tabindex="1" name="username" placeholder="Name" required="true"
+				type="text" onchange="MyFunc()" />
+		</div>
+		<div>
+			<input id="lastname" class="feedback-input" tabindex="2" name="usersurname" placeholder="Surname"
+				required="true" type="text" />
+		</div>
+		<div>
+			<p>Enter your date of birth</p>
+			<input class="feedback-input" tabindex="3" id="datefield" required="true" type='date' min='1900-01-01'
+				max='2021-12-06' />
+		</div>
+		<div>
+			<p>Enter your E-mail</p>
+		</div>
+		<div>
+			<input id="email" class="feedback-input" tabindex="5" name="useremail" placeholder="E-mail" required="true"
+				type="email" />
+		</div>
+		<div>
+			<input class="feedback-input" class="password" tabindex="4" name="userpass" placeholder="Password"
+				type="password" minlength="5" maxlength="12" required="true"
+				data-validate="required,minlength[8],alphaNumeric" />
+		</div>
+
+
+		<div class="gen">
+			<p>Gender</p>
+
+			<input tabindex="6" name="gender" type="radio" required="true" value="female" />Female
+
+			<input tabindex="6" name="gender" type="radio" required="true" value="male" />Male
+
+		</div>
+		<br>
+		<div class="checkbox">
+			<p>Do you already have a team?</p>
+
+			<input tabindex="7" checked type="checkbox" name="yes" value="yes" />Yes
+
+			<input tabindex="8" type="checkbox" name="no" value="yes" />No
+
+		</div>
+		<br>
+		<div>
+			<p>What game are you playing?</p>
+			<select tabindex="9" name="cities" class="feedback-input">
+				<option value="game">PUBG</option>
+				<option value="game">Call of Duty: Black Ops II</option>
+				<option value="game">Fortnite</option>
+				<option value="game">CS:GO</option>
+			</select>
+		</div>
+		<div>
+			<p>Message</p>
+			<textarea id="message" class="feedback-input" tabindex="10" name="text"></textarea>
+		</div>
+
+		<input tabindex="11" type="submit" value="Submit" class="button-submit">
+		<div>
+			<input tabindex="12" type="reset" value="Reset" class="button-reset">
+		</div>
+	</form>
+	<script>
+
+		var today = new Date();
+		var dd = today.getDate();
+		var mm = today.getMonth() + 1;
+		var yyyy = today.getFullYear();
+		if (dd < 10) {
+			dd = '0' + dd
+		}
+		if (mm < 10) {
+			mm = '0' + mm
+		}
+		today = yyyy + '-' + mm + '-' + dd;
+		document.getElementById("datefield").setAttribute("max", today);
+	</script>
+</body>
+
+</html>

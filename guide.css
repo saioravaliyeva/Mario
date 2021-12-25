@@ -1,0 +1,52 @@
+.firstimg {
+	display: flex;
+	margin: 20px;
+	margin-left: 20vw;
+}
+
+.firstimg > div {
+	margin-left: 1vw;
+	text-align: center;
+}
+
+.firstimg > div > button {
+	color: white;
+}
+.text{
+	text-size-adjust: 100;
+	margin-left: 40vw;
+}
+h2 {
+	text-align: center;
+	font-style: normal;
+	color: aliceblue;
+}
+h4 {
+	text-align: center;
+	font-style: normal;
+	color: rgb(255, 217, 0);
+}
+.game {
+	text-align: center;
+	color: aliceblue;
+	font-style: normal;
+}
+p {
+	font-size: 20px;
+	color: rgb(255, 217, 0);
+	padding: 60px;
+	text-align: center;
+}
+span {
+	font-size: 24px;
+	color: rgb(255, 217, 0);
+}
+.oth {
+	text-align: center;
+}
+.pubg{
+	margin:0 auto;
+}
+.video{
+	margin-left: 15%;
+}

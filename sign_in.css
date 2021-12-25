@@ -1,0 +1,22 @@
+.container-fluid{
+display: flex;
+justify-content: center;
+margin-top: 15px;
+}
+.container-fluid>div{
+margin-left: 35px;
+text-align: center;
+}
+.card-header{
+text-align: center;    
+}
+.align-items-center{
+text-align: center;
+}
+.form-group{
+text-align: center;
+}
+.card-footer{
+justify-content: center;
+}
+

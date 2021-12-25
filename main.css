@@ -1,0 +1,73 @@
+.flex-container1 {
+  display: flex;
+  margin: 20px;
+  margin-left: 130px;
+}
+
+.flex-container1 > div {
+  margin-left: 50px;
+  text-align: center;
+}
+
+.flex-container1 > div > button {
+  color: white;
+}
+
+.flex-container2 {
+  display: flex;
+  margin: 100px;
+  margin-left: 80px;
+}
+
+.flex-container2 > div {
+  margin-left: 100px;
+}
+
+.flex-container2 > div > button {
+  color: white;
+}
+
+.flex-container3 {
+  margin: 100px;
+  margin-left: 185px;
+  margin-right: 185px;
+  background-color: rgb(178, 34, 55);
+  border-radius: 15px;
+}
+
+.flex-container3 > table {
+  margin: 50px;
+  text-align: center;
+}
+
+.flex-container4 {
+  display: flex;
+  margin: 50px;
+  margin-left: 5px;
+  margin-right: 185px;
+  background-color: hsl(348, 83%, 47%);;
+  border-radius: 15px;
+}
+
+.flex-container4 > div {
+  margin: 10px;
+  display: inline;
+  margin-left: 170px;
+  text-align: center;
+  border-radius: 25px;
+  color: rgba(255, 255, 255, 1.0);
+  background-color: rgb(178, 34, 55);
+}
+
+.flex-container5 {
+  display: flex;
+  text-align: center;
+  margin-left: 180px;
+  margin-right: 185px;
+  background-color: rgb(178, 34, 55);
+  border-radius: 25px;
+}
+
+.flex-container5 > td {
+  border:1px solid black;
+}
